@@ -25,19 +25,28 @@
         for(const p of c) {
         console.log(c);
         }
-        
+
         let d = document.getElementsByTagName("p");
         for(let myD of d){
         console.log(d.innerHTML);
         }
 
         let e = document.getElementsByClassName("red");
-        console.log(e);
+        for(const exer of e) {
+        console.log(exer.innerHTML);
+        }
 
         let f = document.querySelectorAll("p#p3")
         console.log(f);
 
-        let g = 
+        const g = document.querySelectorAll("p.div")
+        for( const exer of g) {
+            console.log(exer.innerHTML)
+        }
+
+        let h = document.getElementsByTagName("span")
+        console.log(h)
+        
     </script>
 </body>
 </html>
