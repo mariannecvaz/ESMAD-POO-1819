@@ -17,10 +17,10 @@
         const secondTh = document.createElement("th")
         const firstTd = document.createElement("td")
         const secondTd = document.createElement("td")
-        const firstText = document.createElement("Escola")
-        const secondText = document.createElement("Local")
-        const thirdText = document.createElement("ESMAD")
-        const fourthText = document.createElement("Vila do Conde")
+        const firstText = document.createTextNode("Escola")
+        const secondText = document.createTextNode("Local")
+        const thirdText = document.createTextNode("ESMAD")
+        const fourthText = document.createTextNode("Vila do Conde")
 
         //Associação dos nodos de tipo texto aos elementos <th> e <td>
             firstTh.appendChild(firstText)
@@ -31,8 +31,8 @@
         //Associação dos elementos <th> e <td> aos elementos <tr>
             firstTr.appendChild(firstTh)
             firstTr.appendChild(secondTh)
-            secondTr.appendChild(thirdTd)
-            secondTr.appendChild(fourthTd)
+            secondTr.appendChild(firstTd)
+            secondTr.appendChild(secondTd)
 
         //Associação dos elementos <tr> ao elemento <table>
             table.appendChild(firstTr)
@@ -44,7 +44,7 @@
         
 
         //Alinea B
-        document.body.innerHTML +=document
+        document.body.innerHTML +=
                 `<table><tr><th><Escola></th><th>Local</th></tr><td>ESMAD</td><td>Vila Do Conde</td></table>`
             
         //Alinea D
