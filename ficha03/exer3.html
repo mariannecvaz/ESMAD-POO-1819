@@ -7,16 +7,52 @@
     <title>Document</title>
 </head>
 <body>
-        <table>
-                <tr>
-                <th>escola</th>
-                <th>local</th>
-                </tr>
-                <tr>
-                <td>ESMAD</td>
-                <td>Vila do Conde</td>
-                </tr>
-        </table>
+
+        <script>
+        //Alinea A
+        const table = document.createElement("table")
+        const firstTr = document.createElement("tr")
+        const secondTr = document.createElement("tr")
+        const firstTh = document.createElement("th")
+        const secondTh = document.createElement("th")
+        const firstTd = document.createElement("td")
+        const secondTd = document.createElement("td")
+        const firstText = document.createElement("Escola")
+        const secondText = document.createElement("Local")
+        const thirdText = document.createElement("ESMAD")
+        const fourthText = document.createElement("Vila do Conde")
+
+        //Associação dos nodos de tipo texto aos elementos <th> e <td>
+            firstTh.appendChild(firstText)
+            secondTh.appendChild(secondText)
+            firstTd.appendChild(thirdText)
+            secondTd.appendChild(fourthText)
         
+        //Associação dos elementos <th> e <td> aos elementos <tr>
+            firstTr.appendChild(firstTh)
+            firstTr.appendChild(secondTh)
+            secondTr.appendChild(thirdTd)
+            secondTr.appendChild(fourthTd)
+
+        //Associação dos elementos <tr> ao elemento <table>
+            table.appendChild(firstTr)
+            table.appendChild(secondTr)
+        
+        //Associação do elemento <table> ao elemento <body>
+            document.body.appendChild(table)
+
+        
+
+        //Alinea B
+        document.body.innerHTML +=document
+                `<table><tr><th><Escola></th><th>Local</th></tr><td>ESMAD</td><td>Vila Do Conde</td></table>`
+            
+        //Alinea D
+
+        //Alinea E
+
+
+        </script>
+
 </body>
 </html>
