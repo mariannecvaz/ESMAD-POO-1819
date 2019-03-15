@@ -22,11 +22,13 @@
         console.log(b);
 
         let c = document.getElementsByTagName("p");
+        for(const p of c) {
         console.log(c);
-
-        let p = document.getElementsByTagName("p");
-        for(let myP of p){
-        console.log(p.innerHTML);
+        }
+        
+        let d = document.getElementsByTagName("p");
+        for(let myD of d){
+        console.log(d.innerHTML);
         }
 
         let e = document.getElementsByClassName("red");
@@ -34,6 +36,8 @@
 
         let f = document.querySelectorAll("p#p3")
         console.log(f);
+
+        let g = 
     </script>
 </body>
 </html>
