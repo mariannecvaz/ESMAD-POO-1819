@@ -47,10 +47,18 @@
         document.body.innerHTML +=
                 `<table><tr><th><Escola></th><th>Local</th></tr><td>ESMAD</td><td>Vila Do Conde</td></table>`
             
+        //Alinea C
+        const tableToEdit = document.querySelector("table")
+        tableToEdit.innerHTML += `<tr><td>ISEP</td><td>Porto</td></tr>`
+
         //Alinea D
+        const td = document.querySelector("td:last-of-type")
+        td.innerHTML = "Vila do Conde/Póvoa de Varzim"
 
         //Alinea E
-
+        const tbody = document.querySelector("tbody:first-of-type")
+        const tr = document.querySelector("tr:first-of-type")
+        tbody.removeChild(tr)
 
         </script>
 
