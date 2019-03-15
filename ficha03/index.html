@@ -24,8 +24,16 @@
         let c = document.getElementsByTagName("p");
         console.log(c);
 
+        let p = document.getElementsByTagName("p");
+        for(let myP of p){
+        console.log(p.innerHTML);
+        }
+
         let e = document.getElementsByClassName("red");
         console.log(e);
+
+        let f = document.querySelectorAll("p#p3")
+        console.log(f);
     </script>
 </body>
 </html>
