@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+        multiplyNumeric(menu);
+
+        
+        function multiplyNumeric(obj) {
+            let multi = 0
+            for (const key in menu) {
+
+                if (isNaN(menu[key])) {
+                    console.log("Not a number")
+                }
+                else {
+                    multi = menu[key] * 2
+                    console.log(multi)
+                }
+            }
+        }
+
+        menu = {
+            width: 400,
+            height: 600,
+            title: "My menu"
+        };
+
+    </script>
+</body>
+
+</html>
