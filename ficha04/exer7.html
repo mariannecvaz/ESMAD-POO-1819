@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form sobre Filmes</h1>
+
+   
+    <form id="formFilm">
+            <!--NOME-->
+            <label for="txtFilmName">Nome do filme</label>
+            <input id="txtFilmName" type="text" required>
+            <br>
+            <!--ANO-->
+            <label for="txtFilmYear">Ano do filme</label>
+            <input id="txtFilmYear" type="number" required>
+            <br>
+            <!--GENERO-->
+            <label for="txtFilmGenre">Género do jogo</label>
+            <select id="genre">
+                    <option value="comedy">Comedia</option>
+                    <option value="action">Ação</option>
+                    <option value="adventure">Aventura</option>
+                    <option value="terror">Terror</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="other">Outros</option>
+                </select>
+        
+            <br>
+            <!---CAPA-->
+            <label for="txtFilmCover">Capa do filme</label>
+            <input id="txtFilmCover" type="url" required>
+            <br>
+            <!--TRAILER-->
+            <label for="txtFilmTrailer">Trailer do filme:</label>
+            <input id="txtFilmTrailer" type="url">
+            <!--BOTÕES-->
+            <br> <button type="submit" form="formFilm" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+
+        <script>
+        
+        
+        </script>
+    
+</body>
+</html>
