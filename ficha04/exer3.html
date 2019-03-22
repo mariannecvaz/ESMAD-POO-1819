@@ -39,7 +39,7 @@
             //grades.push(newObj) 
             grades[grades.length] = newObj
             
-            Console.table(grades)
+            console.table(grades)
         }
         addNewObject()
 
@@ -53,6 +53,16 @@
             console.log(sum / grades.length)
         }
         calcGradesAverage()
+
+        //d)
+        positiveGrade()
+        function positiveGrade() {
+            for (const key of grades) {
+                if(key.grade>=10) {
+                    console.log(key.name)
+                }
+            }
+        }
     </script>
 </body>
 </html>
